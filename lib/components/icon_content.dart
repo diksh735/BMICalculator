@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:bmicalculator/constants.dart';
 
 class IconText extends StatelessWidget {
+  IconText({this.icon, this.label});
+
   final IconData icon;
   final String label;
-  const IconText({Key key, @required this.icon, @required this.label})
-      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,16 +14,15 @@ class IconText extends StatelessWidget {
       children: <Widget>[
         Icon(
           icon,
-          size: 80,
-          color: Color(0xFFFFFFFF),
+          size: 80.0,
         ),
         SizedBox(
-          height: 15,
+          height: 15.0,
         ),
         Text(
           label,
-          style: TextStyle(fontSize: 15, color: Color(0xFFFFFFFF)),
-        ),
+          style: kLabelTextStyle,
+        )
       ],
     );
   }
