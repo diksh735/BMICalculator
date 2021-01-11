@@ -1,6 +1,6 @@
 # BMICalculator
 
-A new Flutter application.
+A new Flutter application with a Splash Screen 
 
 ## Getting Started
 
