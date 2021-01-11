@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:bmicalculator/components/icon_content.dart';
@@ -27,27 +28,6 @@ class _InputPageState extends State<InputPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Theme(
-        data: Theme.of(context).copyWith(canvasColor: kInactiveCardColour),
-        child: Drawer(
-          child: ListView(
-            children: <Widget>[
-              ListTile(
-                title: Text(
-                  'Light Theme',
-                  style: TextStyle(fontSize: 17),
-                ),
-              ),
-              ListTile(
-                title: Text(
-                  'Dark Theme',
-                  style: TextStyle(fontSize: 17),
-                ),
-              )
-            ],
-          ),
-        ),
-      ),
       appBar: AppBar(
         title: Text('BMI CALCULATOR'),
       ),
